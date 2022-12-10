@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zqy"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/picture"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="2022红岩网校移动开发部招新群"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/title"
+
+        android:layout_marginTop="1dp"
+        android:text="昨天 23:53"
+        android:gravity="right"
+        android:maxLines="1"
+        android:textSize="11sp"/>
+
+
+    <TextView
+        android:id="@+id/cont"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/picture"
+        android:layout_marginTop="5dp"
+        android:text="22-计算机蒋佳鑫：我试试"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="13sp"/>
+
+
+</RelativeLayout>
